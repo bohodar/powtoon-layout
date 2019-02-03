@@ -1,0 +1,302 @@
+@font-face {
+	font-family: MullerRegular;
+	src: url(fonts/MullerRegular.ttf);
+}
+@font-face {
+	font-family: Visby CF Heavy;
+	src: url(fonts/Visby CF Heavy.ttf);
+}
+@font-face {
+	font-family: story Medium;
+	src: url(fonts/story Medium.ttf);
+}
+body {
+	margin: 0 auto;
+	min-width: 700px;
+}
+
+
+.top {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	left: 0;
+	top: 0;
+	right: 0;
+	background: linear-gradient(0deg, #63c9c4, #f9e9a7);
+	font-family: MullerRegular, sans-serif;
+	z-index: 5;
+}
+.header {
+	position: absolute;
+	width: 12vw;
+	height: 13vh;
+	background: #fff;
+	border-radius: 10px;
+	transform: rotate(-5deg);
+	left: 9%;
+	top: -30px;
+	z-index: 10;
+}
+.powtoon-icon {
+	position: absolute;
+	top: 50px;
+	left: 15px;
+	transform: rotate(5deg);
+}
+.magnet {
+	position: absolute;
+	top: 9;
+	height: 96vh;
+	right: 0;
+}
+.row-1 {
+	position: absolute;
+	left: 10%;
+	top: 29vh;
+	color: #44a09b;
+	font-size: 3.5vh;
+	text-transform: capitalize;
+	font-weight: 700;
+}
+.row-2 {
+	position: absolute;
+	left: 10%;
+	right: 43%;
+	top: 35vh;
+	font-size: 5.5vh;
+	width: 50vw;
+}
+.row-2 span {
+	font-weight: 700;
+	font-size: 5.9vh;
+}
+.submit-block {
+	position: absolute;
+	background: #fff;
+	border-bottom-right-radius: 100px;
+	border-top-right-radius: 100px;
+	width: 43vw;
+	top: 65vh;
+	left: 0;
+	height: 20vh;
+}
+.time-row {
+	position: relative;
+	text-align: center;
+	top: 4vh;
+	color: #ff8141;
+	font-weight: 600;
+	font-size: 2.3vh;
+}
+button {
+	position: relative;
+	width: 60%;
+	display: block;
+	margin: auto;
+	border-radius: 3vh;
+	border-color: #ff8141;
+	background: #ff8141;
+
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 3vh;
+	color: #fff;
+}
+.submit-block button {
+	top: 35%;
+	height: 30%;
+}
+button:hover {
+	box-shadow: 0 0 30px 5px #ffa841;
+	text-shadow: 0 0 5px #eee;
+}
+.scroll {
+	width: 100%;
+	position: absolute;
+	bottom: 50px;
+	right: 0;
+	left: 0;
+}
+.sign {
+	position: absolute;
+	left: 50%;
+	top: -25px;
+	transform: translate(-50%, 0);
+	font-family: Visby CF Heavy;
+	font-size: 16.2px;
+	text-transform: uppercase;
+	text-shadow: 0 0 22px #000;
+}
+.sign a {
+	text-decoration: none;
+	color: #fff;
+}
+.triangle {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+
+
+
+
+
+.middle {
+	position: relative;
+	background: #fff;
+	height: 80vh;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.leftbox {
+	position: absolute;
+	height: 80vh;
+	width: 54%;
+	margin: 0;
+	z-index: 3;
+	background: #fed;
+}
+
+.frame {
+		position: absolute;
+		width: 100%;
+		z-index: 5;
+		background: #fff;
+		opacity: 0.4;
+}
+
+.circle {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	height: 15vh;
+	width: 15vh;
+	border-radius: 50%;
+	background: #000;
+	opacity: 0.7;
+	z-index: 11;
+	box-shadow: 0 0 5px 2px rgba(0,0,0,0.75);
+}
+.circle::after {
+	position: absolute;
+	content: "";
+	width: 0; 
+	height: 0; 
+	border-top: 22px solid transparent;
+	border-bottom: 22px solid transparent;
+	border-left: 35px solid #fff;
+	left: 50%;
+	top: 50%;
+	transform: translate(-30%, -50%);
+}
+.circle:active {
+	box-shadow: inset 0 0 5px 2px #000;
+	border: 1px #fff;
+}
+.circle img {
+	position: absolute;
+	transform: translate(73%, 87%);
+	z-index: 12;
+}
+.circle img:hover {
+	animation-name: cover;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+@keyframes cover {
+	100% {
+	opacity: 0.6;
+	}
+}
+.circle p {
+	font-family: story;
+	font-weight: 700;
+	color: #000;
+	text-align: center;
+	line-height: 3.5vh;
+	font-size: 3.7vh;
+	transform: translate(150%, 190%) rotate(12deg);
+}
+
+.rightbox {
+	position: absolute;
+	background: #fff;
+	right: 0;
+	width: 46%;
+	height: 80vh;
+	z-index: 6;
+	font-family: Visby CF;
+}
+.list{
+	position: absolute;
+	width: 80%;
+	margin-left: 10%;
+	font-size: 2vh;
+}
+h2 {
+	margin: 13% 5% 5%;
+	margin-bottom: 0;
+	font-weight: 700;
+	color: #3a4a62;
+	font-size: 4vh;
+	text-transform: uppercase;
+}
+ul {
+	margin: 4% 0 4%;
+	font-weight: 300;
+	color: #575656;
+	list-style-image: url(img/arrow.png);
+}
+ol {
+	padding-top: 1.8vh;
+	padding-right: 5vh;
+	font-weight: 200;
+	list-style-image: url(img/heart.png);
+}
+li {
+	padding: .5vh;
+}
+.rightbox button {
+	position: absolute;
+	bottom: 9vh;
+	left: 50%;
+	transform: translate(-50%, 0);
+	height: 6vh;
+}
+
+
+
+
+.footer {
+	position: relative;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background: #273d50;
+	height: 18vh;
+	z-index: 6;
+}
+.footer-text {
+	font-family: Visby CF Heavy;
+	font-size: 5.5vh;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	transform: translate(0, 70%);
+}
+.arrow-right {
+	position: relative;
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-left: 30px solid #fff;
+	z-index: 50;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
