@@ -1,4 +1,4 @@
 # powtoon-layout
-My first big practive.
+My first practive.
 
 That's layout for joining to Mate Academy.
